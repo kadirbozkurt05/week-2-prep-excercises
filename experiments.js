@@ -30,7 +30,7 @@ function runExperiment(sampleSize) {
 
 
   for(let each of valueCounts){
-    results.push(((each/sampleSize)*100));
+    results.push(((each/sampleSize)*100).toFixed(2));
 
   }
 
