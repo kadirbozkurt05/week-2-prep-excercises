@@ -15,7 +15,7 @@ function runExperiment(sampleSize) {
 
   const results = [];
   for(let i=0;i<sampleSize;i++){
-    valueCounts[randomInteger()]++;
+    valueCounts[randomInteger()-1]++;
 }
 
   // TODO
@@ -56,6 +56,6 @@ function main() {
   }
 }
 
-let randomInteger = ()=> Math.floor((Math.random()*6));
+let randomInteger = ()=> Math.floor((Math.random()*6)+1);
 
 main();
